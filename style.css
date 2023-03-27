@@ -1,0 +1,32 @@
+*{
+	margin:0px;
+	padding:0px;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 0px;
+  padding: 0px;
+  border:1px solid #aaa;
+  max-width:500px;
+  width:100%;
+  box-sizing:border-box;
+  margin:0px auto;
+}
+
+.grid-container  div {
+  background-color: #fadbd8;
+  border: 1px solid #aaa;
+  text-align: center;
+  font-size: 30px;
+  padding: 50px;
+}
+.first-span{
+	grid-column-start:1;
+	grid-column-end:3;
+	grid-row-start:1;
+	grid-row-end:3;
+}
+.last-span{
+	grid-column:span 3;
+}
